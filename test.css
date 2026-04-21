@@ -76,3 +76,29 @@ span p{
 .sidebar { grid-area: sidebar; background: #2ecc71; }
 .content { grid-area: content; background: #ecf0f1; }
 .footer  { grid-area: footer; background: #34495e; color: white; }
+
+.layout-container {
+  display: grid;
+  grid-template-columns: 150px 1fr 150px;
+  grid-template-rows: 80px 1fr 60px;
+  gap: 10px;
+  height: 100vh;
+}
+
+.header1 { grid-column: 1 / -1; background: #333; color: #fff; }
+.footer1 { grid-column: 1 / -1; background: #333; color: #fff; }
+.nav1 { background: #eee; }
+.main1 { background: #fff; border: 1px solid #ddd; }
+.ads1 { background: #eee; }
+
+/* Mobile View */
+@media (max-width: 600px) {
+  .layout-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+  .header, .nav, .main, .ads, .footer {
+    grid-column: 1;
+  }
+}
+
