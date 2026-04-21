@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section{
+    margin-top: 20px;
+}
+.container{
+    display: grid;
+    grid-template-columns:1fr 4fr;
+    gap: 10px;
+    padding: 20px;
+    background-color: hsl(241, 100%, 70%);
+    /* height: 100vh; */
+
+}
+
+ .item{
+    background-color: #0069b3;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    color: white;
+    cursor: pointer;
+    transition: all .3s ease;
+ }
