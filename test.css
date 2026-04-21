@@ -11,7 +11,9 @@ section{
     grid-template-columns:1fr 4fr;
     gap: 10px;
     padding: 20px;
+    margin-bottom: 50px;
     background-color: hsl(241, 100%, 70%);
+    border: #013557 solid 10px;
     /* height: 100vh; */
 
 }
@@ -25,3 +27,52 @@ section{
     cursor: pointer;
     transition: all .3s ease;
  }
+    .item:hover{
+        background-color: #013557;
+        transform: scale(1.02);
+    }
+span{
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    width: 200px;
+    height: 200px;
+    background-color: hsl(241, 100%, 70%);
+    border: #013557 solid 10px;
+
+}
+span:hover{
+    
+    transform: scale(1.02);
+}
+span p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(200, 100%, 45%);
+    color: white;
+    font-size: 20px;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    transition: all .3s ease;
+}
+.container1 {
+  display: grid;
+  height: 100vh; /* Full screen height */
+  grid-template-columns: 200px 1fr; /* Sidebar is 200px, content takes rest */
+  grid-template-rows: 60px 1fr 40px; /* Header, Main, Footer heights */
+  
+  /* Defining the layout "map" */
+  grid-template-areas: 
+    "header header"
+    "sidebar content"
+    "sidebar footer";
+  gap: 10px;
+}
+
+/* Assigning elements to the map areas */
+.header  { grid-area: header; background: #3498db; }
+.sidebar { grid-area: sidebar; background: #2ecc71; }
+.content { grid-area: content; background: #ecf0f1; }
+.footer  { grid-area: footer; background: #34495e; color: white; }
