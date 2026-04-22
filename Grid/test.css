@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-section{
+/* section{
     margin-top: 20px;
 }
 .container{
@@ -14,7 +14,6 @@ section{
     margin-bottom: 50px;
     background-color: hsl(241, 100%, 70%);
     border: #013557 solid 10px;
-    /* height: 100vh; */
 
 }
 
@@ -59,11 +58,9 @@ span p{
 }
 .container1 {
   display: grid;
-  height: 100vh; /* Full screen height */
-  grid-template-columns: 200px 1fr; /* Sidebar is 200px, content takes rest */
-  grid-template-rows: 60px 1fr 40px; /* Header, Main, Footer heights */
-  
-  /* Defining the layout "map" */
+  height: 100vh;
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: 60px 1fr 40px;
   grid-template-areas: 
     "header header"
     "sidebar content"
@@ -71,19 +68,19 @@ span p{
   gap: 10px;
 }
 
-/* Assigning elements to the map areas */
+
 .header  { grid-area: header; background: #3498db; }
 .sidebar { grid-area: sidebar; background: #2ecc71; }
 .content { grid-area: content; background: #ecf0f1; }
 .footer  { grid-area: footer; background: #34495e; color: white; }
-
+*/
 .layout-container {
   display: grid;
   grid-template-columns: 150px 1fr 150px;
   grid-template-rows: 80px 1fr 60px;
   gap: 10px;
   height: 100vh;
-}
+} 
 
 .header1 { grid-column: 1 / -1; background: #333; color: #fff; }
 .footer1 { grid-column: 1 / -1; background: #333; color: #fff; }
