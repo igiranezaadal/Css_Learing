@@ -24,8 +24,9 @@ aside{
     background-color: #f0f0f0;
     grid-area: sidebar;
     position: sticky;
-    top: 55px;
+    top: 54px;
     align-self: start;
+    height: calc(100vh - 54px);
 }
 main{
     background-color: #fff;
@@ -36,4 +37,19 @@ footer{
     color: white;
     grid-area: footer;
     padding: 1rem;
+}
+
+
+@media(max-width:800px){
+    body{
+        grid-template-columns: 1fr;
+    }
+    aside{
+        position: fixed;
+        width: 300px;
+        display: none;
+    }
+    .show{
+        display: block;
+    }
 }
