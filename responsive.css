@@ -23,13 +23,16 @@ nav{
 .dropdown{
     margin-left: 30%;
 }
-.dropdown .food{
-    background-color: hsl(0, 0%, 80%);
+.dropdown button{
+    background-color: hsl(0, 0%, 80%); 
     color: #ffffff;
     padding: 10px 15px;
     border: none;
     cursor: pointer;
     border-radius: 5px;
+}
+.dropdown .food{
+    
 }
 .dropdown a{
     display: block;
@@ -39,15 +42,18 @@ nav{
 }
 .dropdown .content{
     display: none;
+    margin-left: 77px;
     position: absolute;
     background-color: hsla(0, 0%, 100%, 0.85);
     min-width: 100px;
     box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8);
+    border-radius: 5px;
 }
 .dropdown:hover .content{
-    display: block;
+    display: block; 
 }
-.dropdown:hover .food{
+.food:hover{
+    /* display: block; */
     background: hsla(0, 0%, 80%, 0.7);
 }
 .dropdown a:hover{
